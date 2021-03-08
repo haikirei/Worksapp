@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom'
 
 import App from './components/App'
-import Manage from './components/Manage'
 import Contact from './components/Contact'
 import registerServiceWorker from './components/registerServiceWorker'
 import Logo from './static/rr4_s.png'
@@ -25,9 +24,6 @@ render(
         <div className="collapse navbar-collapse" id="TopNavbar">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Manage">Manage</NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>
             </li>
           </ul>
@@ -35,7 +31,6 @@ render(
       </nav>
 
       <Route exact path="/" component={App}/>
-      <Route path="/Manage" component={Manage}/>
       <Route path="/Contact" component={Contact}/>
     </div>
   </Router>,
