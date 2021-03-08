@@ -9,10 +9,8 @@ const Contact = () => (
     <div className="container">
       <div className="clearfix"><br/><br/><br/></div>
       <div className="jumbotron mt">
-          <h2>Stay connected?</h2>
-          <div className="App">                 
+          <h2>Stay connected?</h2>              
         <ContactForm />           
-    </div> 
       </div>
     </div>
 )

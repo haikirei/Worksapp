@@ -6,12 +6,17 @@ import {
   NavLink
 } from 'react-router-dom'
 
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import todoApp from './reducers';
+
 import App from './components/App'
 import Contact from './components/Contact'
 import registerServiceWorker from './components/registerServiceWorker'
 import Logo from './static/rr4_s.png'
 
-render(
+const NavBar = () => (
+    <header className='navbar'>
   <Router>
     <div>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top mb">
@@ -33,8 +38,17 @@ render(
       <Route exact path="/" component={App}/>
       <Route path="/Contact" component={Contact}/>
     </div>
-  </Router>,
+  </Router>      
+    </header>
+);
 
-document.getElementById('root'))
+let store = createStore(todoApp);
 
-registerServiceWorker()
+render(
+  <Provider store={store}>
+    <NavBar />
+  </Provider>,
+  document.getElementById('root')
+);
+
+registerServiceWorker();
