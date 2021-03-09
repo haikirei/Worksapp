@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import ContactForm from './ContactForm';
-
+import './styles.css'
 
 const Contact = () => (
 

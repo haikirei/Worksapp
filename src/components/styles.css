@@ -1,4 +1,18 @@
+.jumbotron {margin-left: 50vh; width: 100%}
+
+body {
+  background-color: gray
+}
+
 .rowA {display:flex; flex-direction:row; margin-right: 10px;}
+
+input, textarea {
+    background-color: transparent;
+    padding: 0.15rem 1.25rem;
+    max-width: 25vh;
+    border: 1px solid gray;
+    color: gray
+}
 
 .todo-app {
   font-family: sans-serif;

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 
+import './styles.css'
 import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
 import VisibileTodoList from '../containers/VisibleTodoList';
