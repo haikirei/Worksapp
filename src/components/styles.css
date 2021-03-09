@@ -1,3 +1,5 @@
+.rowA {display:flex; flex-direction:row; margin-right: 10px;}
+
 .todo-app {
   font-family: sans-serif;
 }

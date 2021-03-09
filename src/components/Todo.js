@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import RemoveTodo from '../containers/RemoveTodo'
+import './styles.css'
 
 const Todo = ({ onClick, completed, text }) => (
   <li
@@ -8,7 +10,7 @@ const Todo = ({ onClick, completed, text }) => (
       textDecoration: completed ? 'line-through' : 'none'
     }}
   >
-    {text} 
+    <div className='rowA'>{text} &nbsp; <RemoveTodo /></div>
   </li>
 );
 
